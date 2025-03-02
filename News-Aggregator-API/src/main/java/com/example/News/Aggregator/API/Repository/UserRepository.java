@@ -1,8 +1,9 @@
-package com.example.News.Aggregator.API.Controller.Repository;
+package com.example.News.Aggregator.API.Repository;
 
 import com.example.News.Aggregator.API.Entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
 import java.util.Optional;
 
 @Repository

@@ -1,5 +1,6 @@
 package com.example.News.Aggregator.API.Entities;
-import jakarta.validation.constraints.*;
+
+import jakarta.validation.constraints.NotBlank;
 
 
 

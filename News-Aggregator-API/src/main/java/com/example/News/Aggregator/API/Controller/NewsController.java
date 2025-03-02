@@ -1,7 +1,7 @@
 package com.example.News.Aggregator.API.Controller;
 
-import com.example.News.Aggregator.API.Controller.Repository.UserRepository;
 import com.example.News.Aggregator.API.Entities.User;
+import com.example.News.Aggregator.API.Repository.UserRepository;
 import com.example.News.Aggregator.API.Services.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

@@ -1,8 +1,7 @@
 package com.example.News.Aggregator.API.Entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
-
+import jakarta.validation.constraints.NotBlank;
 
 import java.util.ArrayList;
 import java.util.List;

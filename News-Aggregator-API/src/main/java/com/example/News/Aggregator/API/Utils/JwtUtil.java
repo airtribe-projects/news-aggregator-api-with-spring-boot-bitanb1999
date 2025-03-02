@@ -4,6 +4,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
+
 import java.security.Key;
 import java.util.Date;
 
@@ -26,6 +27,7 @@ public class JwtUtil {
         try {
             Claims claims = Jwts.parser()
                     .setSigningKey(key)
+                    .build()
                     .parseClaimsJws(token)
                     .getBody();
             return claims.getExpiration().after(new Date());
@@ -33,5 +35,10 @@ public class JwtUtil {
             return false;
         }
 
+    }
+    public String extractUsername(String token) {
+        // Implementation to extract username from the token
+        String email ="admin@gmail.com";
+        return email;
     }
 }

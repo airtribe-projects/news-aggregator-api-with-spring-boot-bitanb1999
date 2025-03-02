@@ -1,17 +1,12 @@
 package com.example.News.Aggregator.API.Controller;
 
-import com.example.News.Aggregator.API.Controller.Repository.UserRepository;
 import com.example.News.Aggregator.API.Entities.User;
-import com.example.News.Aggregator.API.Entities.UserDTO;
-import com.example.News.Aggregator.API.Utils.JwtUtil;
-import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.*;
-import org.springframework.http.HttpStatus;
+import com.example.News.Aggregator.API.Repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
